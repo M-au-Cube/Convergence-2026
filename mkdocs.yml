@@ -1,1 +1,101 @@
-site_name: My Docs
+site_name: Convergence ESG
+site_url: https://m-au-cube.github.io/Convergence-2026/
+site_description: Analytics ESG pour entreprises, organisations publiques et consommateurs
+site_author: Convergence ESG
+
+repo_url: https://github.com/M-au-Cube/Convergence-2026
+repo_name: M-au-Cube/Convergence-2026
+edit_uri: edit/master/docs/
+
+copyright: Copyright &copy; 2026 Convergence ESG
+
+theme:
+  name: material
+  language: fr
+  palette:
+    - scheme: default
+      primary: teal
+      accent: green
+      toggle:
+        icon: material/brightness-7
+        name: Passer en mode sombre
+    - scheme: slate
+      primary: teal
+      accent: green
+      toggle:
+        icon: material/brightness-4
+        name: Passer en mode clair
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: material/leaf
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - toc.follow
+
+plugins:
+  - search:
+      lang:
+        - fr
+        - en
+  - i18n:
+      docs_structure: folder
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: fr
+          default: true
+          name: Français
+          build: true
+          site_name: Convergence ESG
+          nav_translations:
+            Présentation: Présentation
+            Transparence: Transparence
+            Resilience: Resilience
+            Evidence: Evidence
+            Cohérence: Cohérence
+            Nous rejoindre: Nous rejoindre
+        - locale: en
+          name: English
+          build: true
+          site_name: Convergence ESG
+          nav_translations:
+            Présentation: Presentation
+            Transparence: Transparency
+            Resilience: Resilience
+            Evidence: Evidence
+            Cohérence: Coherence
+            Nous rejoindre: Join us
+
+nav:
+  - Présentation: index.md
+  - Transparence: transparence.md
+  - Resilience: resilience.md
+  - Evidence: evidence.md
+  - Cohérence: coherence.md
+  - Nous rejoindre: nous-rejoindre.md
+
+extra:
+  contact_form_url: https://formspree.io/f/YOUR_FORM_ID
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
