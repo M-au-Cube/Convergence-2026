@@ -12,24 +12,23 @@ copyright: Copyright &copy; 2026 Convergence ESG
 theme:
   name: material
   language: fr
+  logo: assets/logo-convergence.png
   palette:
     - scheme: default
-      primary: teal
-      accent: green
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-7
         name: Passer en mode sombre
     - scheme: slate
-      primary: teal
-      accent: green
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-4
         name: Passer en mode clair
   font:
     text: Roboto
     code: Roboto Mono
-  icon:
-    logo: material/leaf
   features:
     - navigation.tabs
     - navigation.top

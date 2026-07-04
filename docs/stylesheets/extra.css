@@ -1,3 +1,59 @@
+/* Couleurs Convergence — vert foncé + vert clair */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #006837;
+  --md-primary-fg-color--light: #2d8a4e;
+  --md-primary-fg-color--dark: #004d2c;
+  --md-primary-bg-color: #006837;
+  --md-accent-fg-color: #8dc63f;
+  --md-accent-fg-color--transparent: #8dc63f26;
+  --md-accent-bg-color: #8dc63f;
+  --md-typeset-a-color: #006837;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #8dc63f;
+  --md-primary-fg-color--light: #a2d045;
+  --md-primary-fg-color--dark: #006837;
+  --md-primary-bg-color: #0d2818;
+  --md-accent-fg-color: #8dc63f;
+  --md-accent-fg-color--transparent: #8dc63f26;
+  --md-accent-bg-color: #8dc63f;
+  --md-typeset-a-color: #a2d045;
+}
+
+/* Logo dans l'en-tête */
+.md-header__button.md-logo {
+  padding: 0;
+  margin: 0 0.4rem 0 0.2rem;
+}
+
+.md-header__button.md-logo img {
+  height: 2.75rem;
+  width: auto;
+}
+
+/* Le logo inclut déjà le nom « Convergence » */
+.md-header__title {
+  display: none;
+}
+
+/* Onglets de navigation — police légèrement plus grande */
+.md-tabs__link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+.md-tabs__link--active,
+.md-tabs__item--active .md-tabs__link {
+  opacity: 1;
+}
+
+/* Surlignage de l'onglet actif en vert clair */
+.md-tabs__link--active {
+  border-bottom-color: var(--md-accent-fg-color);
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -39,7 +95,7 @@
   border: none;
   border-radius: 0.25rem;
   background: var(--md-primary-fg-color);
-  color: var(--md-primary-bg-color);
+  color: #fff;
   font: inherit;
   font-weight: 600;
   cursor: pointer;
@@ -48,6 +104,8 @@
 
 .contact-form button[type="submit"]:hover {
   opacity: 0.85;
+  background: var(--md-accent-fg-color);
+  color: #1a2e1a;
 }
 
 .grid.cards {
