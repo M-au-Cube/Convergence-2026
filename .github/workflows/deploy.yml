@@ -29,5 +29,5 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Deploy to gh-pages branch
+      - name: Build and deploy to gh-pages
         run: mkdocs gh-deploy --force
