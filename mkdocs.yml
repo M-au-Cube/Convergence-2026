@@ -87,7 +87,7 @@ extra:
   contact_form_url: https://formspree.io/f/YOUR_FORM_ID
 
 extra_css:
-  - stylesheets/extra.css
+  - stylesheets/convergence.css
 
 markdown_extensions:
   - admonition
