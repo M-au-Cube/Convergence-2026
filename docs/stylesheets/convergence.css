@@ -1,10 +1,10 @@
-/* Convergence ESG — v3 */
+/* Convergence ESG — v4 */
 
 [data-md-color-primary="custom"] {
   --md-primary-fg-color: #006837;
   --md-primary-fg-color--light: #2d8a4e;
   --md-primary-fg-color--dark: #004d2c;
-  --md-primary-bg-color: #006837;
+  --md-primary-bg-color: #fff;
   --md-accent-fg-color: #8dc63f;
   --md-accent-fg-color--transparent: #8dc63f33;
   --md-accent-bg-color: #8dc63f;
@@ -15,12 +15,25 @@
   --md-primary-fg-color: #006837;
   --md-primary-fg-color--light: #2d8a4e;
   --md-primary-fg-color--dark: #004d2c;
-  --md-primary-bg-color: #0d2818;
+  --md-primary-bg-color: #fff;
   --md-accent-fg-color: #8dc63f;
   --md-typeset-a-color: #a2d045;
 }
 
-/* En-tête : logo icone + titre ESG */
+/* Icônes de l'en-tête (langue, recherche, thème) visibles sur fond vert */
+.md-header__button {
+  color: #fff;
+}
+
+.md-header__button svg {
+  fill: currentColor;
+}
+
+.md-header__button:hover {
+  color: #d4ec9a;
+}
+
+/* En-tête : logo icône */
 .md-header__button.md-logo {
   padding: 0;
   margin: 0 0.5rem 0 0.25rem;
@@ -28,14 +41,14 @@
 
 .md-header__button.md-logo .convergence-logo,
 .md-header__button.md-logo img {
-  height: 1.75rem;
+  height: 2.35rem;
   width: auto;
   display: block;
 }
 
 .md-nav__button.md-logo .convergence-logo,
 .md-nav__button.md-logo img {
-  height: 2rem;
+  height: 2.75rem;
   width: auto;
 }
 
