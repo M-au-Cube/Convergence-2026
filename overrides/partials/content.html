@@ -4,7 +4,7 @@
 {% include "partials/tags.html" %}
 {% include "partials/actions.html" %}
 {% if config.theme.logo %}
-<a href="{{ nav.homepage.url | url }}" class="convergence-page-logo-link" title="{{ config.site_name }}">
+<a href="{{ nav.homepage.url | url }}" class="convergence-page-logo-link{% if page.is_homepage %} convergence-page-logo-link--home{% endif %}" title="{{ config.site_name }}">
   <img
     src="{{ config.site_url }}assets/logo-convergence.png"
     alt="{{ config.site_name }}"
