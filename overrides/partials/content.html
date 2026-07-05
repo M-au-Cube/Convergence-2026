@@ -3,7 +3,7 @@
 -#}
 {% include "partials/tags.html" %}
 {% include "partials/actions.html" %}
-{% if config.theme.logo %}
+{% if config.theme.logo and page == nav.homepage %}
 <a href="{{ nav.homepage.url | url }}" class="convergence-page-logo-link" title="{{ config.site_name }}">
   <img
     src="{{ config.site_url }}assets/logo-convergence.png"

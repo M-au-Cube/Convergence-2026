@@ -39,7 +39,7 @@
   display: none;
 }
 
-/* Logo en haut à gauche du contenu de chaque page */
+/* Logo en haut à gauche — page Présentation uniquement */
 .convergence-page-logo-link {
   display: block;
   margin: 0 0 1.25rem;
