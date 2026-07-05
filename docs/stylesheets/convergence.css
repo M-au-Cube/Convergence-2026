@@ -1,4 +1,4 @@
-/* Convergence ESG — v4 */
+/* Convergence ESG — v5 */
 
 [data-md-color-primary="custom"] {
   --md-primary-fg-color: #006837;
@@ -33,27 +33,27 @@
   color: #d4ec9a;
 }
 
-/* En-tête : logo icône */
-.md-header__button.md-logo {
-  padding: 0;
-  margin: 0 0.5rem 0 0.25rem;
+/* Pas de logo dans le bandeau ni le menu latéral */
+.md-header__button.md-logo,
+.md-nav__button.md-logo {
+  display: none;
 }
 
-.md-header__button.md-logo .convergence-logo,
-.md-header__button.md-logo img {
-  height: 2.35rem;
+/* Logo en haut à gauche du contenu de chaque page */
+.convergence-page-logo-link {
+  display: block;
+  margin: 0 0 1.25rem;
+  line-height: 0;
+}
+
+.convergence-page-logo {
+  height: 5rem;
   width: auto;
   display: block;
 }
 
-.md-nav__button.md-logo .convergence-logo,
-.md-nav__button.md-logo img {
-  height: 2.75rem;
-  width: auto;
-}
-
-.md-header__title {
-  display: none;
+.convergence-page-logo-link:hover {
+  opacity: 0.9;
 }
 
 /* Onglets visibles : texte blanc sur barre vert foncé */
