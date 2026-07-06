@@ -57,7 +57,7 @@ plugins:
           build: true
           site_name: Convergence ESG
           nav_translations:
-            Présentation: Présentation
+            L'Association: L'Association
             Transparence: Transparence
             Resilience: Resilience
             Evidence: Evidence
@@ -68,7 +68,7 @@ plugins:
           build: true
           site_name: Convergence ESG
           nav_translations:
-            Présentation: Presentation
+            L'Association: The Association
             Transparence: Transparency
             Resilience: Resilience
             Evidence: Evidence
@@ -76,7 +76,7 @@ plugins:
             Nous rejoindre: Join us
 
 nav:
-  - Présentation: index.md
+  - L'Association: index.md
   - Transparence: transparence.md
   - Resilience: resilience.md
   - Evidence: evidence.md

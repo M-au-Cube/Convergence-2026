@@ -33,6 +33,24 @@
   color: #d4ec9a;
 }
 
+/* Feuille + titre dans le bandeau */
+.md-header__site-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #fff;
+}
+
+.md-header__leaf {
+  width: 1.2rem;
+  height: 1.2rem;
+  flex-shrink: 0;
+}
+
+.md-header__leaf svg {
+  fill: currentColor;
+}
+
 /* Pas de logo dans le bandeau ni le menu latéral */
 .md-header__button.md-logo,
 .md-nav__button.md-logo {
