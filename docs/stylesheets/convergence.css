@@ -33,7 +33,7 @@
   color: #d4ec9a;
 }
 
-/* Feuille + titre dans le bandeau */
+/* Petit logo + titre dans le bandeau */
 .md-header__site-title {
   display: inline-flex;
   align-items: center;
@@ -41,14 +41,11 @@
   color: #fff;
 }
 
-.md-header__leaf {
-  width: 1.2rem;
-  height: 1.2rem;
+.md-header__brand-logo {
+  height: 1.5rem;
+  width: auto;
   flex-shrink: 0;
-}
-
-.md-header__leaf svg {
-  fill: currentColor;
+  display: block;
 }
 
 /* Pas de logo dans le bandeau ni le menu latéral */
