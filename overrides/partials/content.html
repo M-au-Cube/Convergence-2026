@@ -12,8 +12,33 @@
     draggable="false"
   >
 </a>
+{% set is_en = config.theme.language == "en" %}
+<div class="convergence-hero">
+  <h1 class="convergence-hero__title">{{ config.site_name }}</h1>
+  {% if is_en %}
+  <p class="convergence-hero__tagline">
+    <strong>ESG analytics</strong> for companies, public organizations, and consumers.
+  </p>
+  <p class="convergence-hero__lead">
+    Working towards the convergence of society towards sustainable practices and collaboration between stakeholders.
+  </p>
+  <a href="nous-rejoindre/" class="md-button md-button--primary convergence-hero__cta">
+    Join us
+  </a>
+  {% else %}
+  <p class="convergence-hero__tagline">
+    <strong>Analytics ESG</strong> pour entreprises, organisations publiques et consommateurs.
+  </p>
+  <p class="convergence-hero__lead">
+    Convergence vers des pratiques durables et collaboration entre acteurs à toutes les échelles.
+  </p>
+  <a href="nous-rejoindre/" class="md-button md-button--primary convergence-hero__cta">
+    Nous rejoindre
+  </a>
+  {% endif %}
+</div>
 {% endif %}
-{% if "\u003ch1" not in page.content %}
+{% if "\u003ch1" not in page.content and page != nav.homepage %}
   <h1>{{ page.title | d(config.site_name, true)}}</h1>
 {% endif %}
 {{ page.content }}

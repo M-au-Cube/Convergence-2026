@@ -1,5 +1,5 @@
 {#-
-  En-tête avec petit logo Convergence à gauche de « Convergence ESG »
+  En-tête : icône montagne à gauche de « Convergence ESG »
 -#}
 {% set class = "md-header" %}
 {% if "navigation.tabs.sticky" in features %}
@@ -19,16 +19,17 @@
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
-          <span class="md-ellipsis md-header__site-title">
-            <img
-              src="{{ config.site_url }}assets/logo-header.png"
-              alt=""
-              class="md-header__brand-logo"
-              aria-hidden="true"
-              draggable="false"
-            >
+          <a
+            href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}"
+            class="md-header__site-link md-ellipsis"
+            title="{{ config.site_name | e }}"
+            aria-label="{{ config.site_name }}"
+          >
+            <span class="md-header__mountain md-icon" aria-hidden="true">
+              {% include ".icons/material/terrain.svg" %}
+            </span>
             {{ config.site_name }}
-          </span>
+          </a>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">

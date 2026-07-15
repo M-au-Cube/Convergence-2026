@@ -33,22 +33,36 @@
   color: #d4ec9a;
 }
 
-/* Petit logo + titre dans le bandeau */
-.md-header__site-title {
+/* Icône montagne + titre cliquable dans le bandeau */
+.md-header__site-link {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
   color: #fff;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-.md-header__brand-logo {
-  height: 1.5rem;
-  width: auto;
+.md-header__site-link:hover {
+  color: #d4ec9a;
+}
+
+.md-header__mountain {
+  width: 1.3rem;
+  height: 1.3rem;
   flex-shrink: 0;
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Pas de logo dans le bandeau ni le menu latéral */
+.md-header__mountain svg {
+  fill: currentColor;
+  width: 100%;
+  height: 100%;
+}
+
+/* Pas de logo image dans le bandeau ni le menu latéral */
 .md-header__button.md-logo,
 .md-nav__button.md-logo {
   display: none;
@@ -69,6 +83,53 @@
 
 .convergence-page-logo-link:hover {
   opacity: 0.9;
+}
+
+/* Encart d'accueil sous le logo */
+.convergence-hero {
+  margin: 0 0 2rem;
+  padding: 1.5rem 1.75rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(135deg, #006837 0%, #2d8a4e 100%);
+  color: #fff;
+}
+
+.convergence-hero__title {
+  margin: 0 0 0.75rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+}
+
+.convergence-hero__tagline {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.convergence-hero__lead {
+  margin: 0 0 1.25rem;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  opacity: 0.92;
+}
+
+.convergence-hero__cta {
+  background-color: #fff !important;
+  color: #006837 !important;
+  border-color: #fff !important;
+  font-weight: 600;
+}
+
+.convergence-hero__cta:hover {
+  background-color: #d4ec9a !important;
+  border-color: #d4ec9a !important;
+  color: #004d2c !important;
+}
+
+[data-md-color-scheme="slate"] .convergence-hero {
+  background: linear-gradient(135deg, #004d2c 0%, #006837 100%);
 }
 
 /* Onglets visibles : texte blanc sur barre vert foncé */

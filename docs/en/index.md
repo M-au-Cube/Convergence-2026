@@ -1,5 +1,3 @@
-# Convergence ESG
-
 **Convergence** is a non-profit association that produces **ESG analytics** for companies, public organizations, and consumers.
 
 Our mission: work towards the **convergence of society** towards sustainable practices and foster **collaboration between stakeholders** at different scales — from the individual consumer to institutional organizations.
