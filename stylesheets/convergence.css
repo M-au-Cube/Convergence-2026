@@ -1,0 +1,232 @@
+/* Convergence ESG — v5 */
+
+[data-md-color-primary="custom"] {
+  --md-primary-fg-color: #006837;
+  --md-primary-fg-color--light: #2d8a4e;
+  --md-primary-fg-color--dark: #004d2c;
+  --md-primary-bg-color: #fff;
+  --md-accent-fg-color: #8dc63f;
+  --md-accent-fg-color--transparent: #8dc63f33;
+  --md-accent-bg-color: #8dc63f;
+  --md-typeset-a-color: #006837;
+}
+
+[data-md-color-scheme="slate"][data-md-color-primary="custom"] {
+  --md-primary-fg-color: #006837;
+  --md-primary-fg-color--light: #2d8a4e;
+  --md-primary-fg-color--dark: #004d2c;
+  --md-primary-bg-color: #fff;
+  --md-accent-fg-color: #8dc63f;
+  --md-typeset-a-color: #a2d045;
+}
+
+/* Icônes de l'en-tête (langue, recherche, thème) visibles sur fond vert */
+.md-header__button {
+  color: #fff;
+}
+
+.md-header__button svg {
+  fill: currentColor;
+}
+
+.md-header__button:hover {
+  color: #d4ec9a;
+}
+
+/* Icône montagne + titre cliquable dans le bandeau */
+.md-header__site-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.md-header__site-link:hover {
+  color: #d4ec9a;
+}
+
+.md-header__mountain {
+  width: 1.3rem;
+  height: 1.3rem;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.md-header__mountain svg {
+  fill: currentColor;
+  width: 100%;
+  height: 100%;
+}
+
+/* Pas de logo image dans le bandeau ni le menu latéral */
+.md-header__button.md-logo,
+.md-nav__button.md-logo {
+  display: none;
+}
+
+/* Logo en haut à gauche — page Présentation uniquement */
+.convergence-page-logo-link {
+  display: block;
+  margin: 0 0 1.25rem;
+  line-height: 0;
+}
+
+.convergence-page-logo {
+  height: 5rem;
+  width: auto;
+  display: block;
+}
+
+.convergence-page-logo-link:hover {
+  opacity: 0.9;
+}
+
+/* Encart d'accueil sous le logo */
+.convergence-hero {
+  margin: 0 0 2rem;
+  padding: 1.5rem 1.75rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(135deg, #006837 0%, #2d8a4e 100%);
+  color: #fff;
+}
+
+.convergence-hero__title {
+  margin: 0 0 0.75rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+}
+
+.convergence-hero__tagline {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.convergence-hero__lead {
+  margin: 0 0 1.25rem;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  opacity: 0.92;
+}
+
+.convergence-hero__cta {
+  background-color: #fff !important;
+  color: #006837 !important;
+  border-color: #fff !important;
+  font-weight: 600;
+}
+
+.convergence-hero__cta:hover {
+  background-color: #d4ec9a !important;
+  border-color: #d4ec9a !important;
+  color: #004d2c !important;
+}
+
+[data-md-color-scheme="slate"] .convergence-hero {
+  background: linear-gradient(135deg, #004d2c 0%, #006837 100%);
+}
+
+/* Onglets visibles : texte blanc sur barre vert foncé */
+.md-tabs {
+  background-color: var(--md-primary-fg-color--dark);
+}
+
+.md-tabs__link {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.md-tabs__link:hover {
+  color: #d4ec9a;
+}
+
+.md-tabs__item--active .md-tabs__link,
+.md-tabs__link--active {
+  color: #fff;
+  font-weight: 600;
+  border-bottom: 2px solid #8dc63f;
+}
+
+.md-typeset a:not(.md-tabs__link):not(.md-button) {
+  color: #006837;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a:not(.md-tabs__link):not(.md-button) {
+  color: #a2d045;
+}
+
+.md-button--primary {
+  background-color: #006837;
+  border-color: #006837;
+}
+
+.md-button--primary:hover {
+  background-color: #8dc63f;
+  border-color: #8dc63f;
+  color: #1a2e1a;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 36rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.contact-form label {
+  font-weight: 600;
+  margin-bottom: -0.25rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.625rem 0.875rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.25rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #006837;
+  outline-offset: 1px;
+}
+
+.contact-form button[type="submit"] {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  padding: 0.625rem 1.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  background: #006837;
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+  background: #8dc63f;
+  color: #1a2e1a;
+}
+
+.grid.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1rem;
+}
