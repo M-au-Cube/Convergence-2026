@@ -1,4 +1,4 @@
-site_name: Convergence ESG
+site_name: Association Convergence ESG
 site_url: https://m-au-cube.github.io/Convergence-2026/
 site_description: Analytics ESG pour entreprises, organisations publiques et consommateurs
 site_author: Convergence ESG
@@ -56,7 +56,7 @@ plugins:
           default: true
           name: Français
           build: true
-          site_name: Convergence ESG
+          site_name: Association Convergence ESG
           nav_translations:
             L'Association: L'Association
             Transparence: Transparence
@@ -67,7 +67,7 @@ plugins:
         - locale: en
           name: English
           build: true
-          site_name: Convergence ESG
+          site_name: Convergence ESG Association
           nav_translations:
             L'Association: The Association
             Transparence: Transparency
