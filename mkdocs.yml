@@ -1,5 +1,5 @@
 site_name: Association Convergence ESG
-site_url: https://m-au-cube.github.io/Convergence-2026/
+site_url: !ENV [SITE_URL, 'https://m-au-cube.github.io/Convergence-2026/']
 site_description: Analytics ESG pour entreprises, organisations publiques et consommateurs
 site_author: Convergence ESG
 
