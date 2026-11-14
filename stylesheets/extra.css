@@ -1,0 +1,156 @@
+/* =============================================================================
+   Convergence ESG — identité visuelle
+   Vert foncé #006837 · Accent vert clair #8dc63f
+   ============================================================================= */
+
+[data-md-color-primary="custom"] {
+  --md-primary-fg-color: #006837;
+  --md-primary-fg-color--light: #2d8a4e;
+  --md-primary-fg-color--dark: #004d2c;
+  --md-primary-bg-color: #006837;
+  --md-accent-fg-color: #8dc63f;
+  --md-accent-fg-color--transparent: #8dc63f33;
+  --md-accent-bg-color: #8dc63f;
+  --md-typeset-a-color: #006837;
+}
+
+[data-md-color-scheme="slate"][data-md-color-primary="custom"] {
+  --md-primary-fg-color: #006837;
+  --md-primary-fg-color--light: #2d8a4e;
+  --md-primary-fg-color--dark: #004d2c;
+  --md-primary-bg-color: #0d2818;
+  --md-accent-fg-color: #8dc63f;
+  --md-accent-fg-color--transparent: #8dc63f33;
+  --md-accent-bg-color: #8dc63f;
+  --md-typeset-a-color: #a2d045;
+}
+
+/* Logo compact dans l'en-tête (le fichier inclut icône + texte en hauteur) */
+.md-header__button.md-logo {
+  padding: 0;
+  margin: 0 0.25rem 0 0.5rem;
+}
+
+.md-header__button.md-logo .convergence-logo,
+.md-header__button.md-logo img {
+  height: 1.55rem;
+  width: auto;
+  display: block;
+}
+
+/* Logo un peu plus grand dans le menu latéral */
+.md-nav__button.md-logo .convergence-logo,
+.md-nav__button.md-logo img {
+  height: 2.25rem;
+  width: auto;
+}
+
+.md-header__title {
+  display: none;
+}
+
+/* Onglets : texte clair sur fond vert foncé, police légèrement agrandie */
+.md-tabs__link {
+  font-size: 0.85rem !important;
+  font-weight: 500 !important;
+  color: rgba(255, 255, 255, 0.82) !important;
+  opacity: 1 !important;
+}
+
+.md-tabs__link:hover {
+  color: #d4ec9a !important;
+}
+
+.md-tabs__link--active,
+.md-tabs__item--active .md-tabs__link {
+  color: #fff !important;
+  font-weight: 600 !important;
+}
+
+.md-tabs__link--active {
+  border-bottom: 2px solid #8dc63f;
+}
+
+/* Liens dans le contenu uniquement (pas les onglets) */
+.md-typeset a:not(.md-tabs__link) {
+  color: #006837;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a:not(.md-tabs__link) {
+  color: #a2d045;
+}
+
+.md-typeset a:not(.md-tabs__link):hover {
+  color: #8dc63f;
+}
+
+.md-button--primary {
+  background-color: #006837;
+  border-color: #006837;
+}
+
+.md-button--primary:hover {
+  background-color: #8dc63f;
+  border-color: #8dc63f;
+  color: #1a2e1a;
+}
+
+/* --- Formulaire de contact --- */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 36rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.contact-form label {
+  font-weight: 600;
+  margin-bottom: -0.25rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.625rem 0.875rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.25rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #006837;
+  outline-offset: 1px;
+}
+
+.contact-form button[type="submit"] {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  padding: 0.625rem 1.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  background: #006837;
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.contact-form button[type="submit"]:hover {
+  background: #8dc63f;
+  color: #1a2e1a;
+}
+
+.grid.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1rem;
+}
